@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 145.204 sec <<< FAILURE! - in TestSuite
+test_01(com.saucelabs.appium.AndroidTest)  Time elapsed: 4.974 sec  <<< FAILURE!
+java.lang.AssertionError: Text on textView not correct
+Expected: "0"
+     but: was "2"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at com.saucelabs.appium.pages.MainActivityPage.verifyTextInputData(MainActivityPage.java:65)
+	at com.saucelabs.appium.AndroidTest.test_01(AndroidTest.java:16)
+

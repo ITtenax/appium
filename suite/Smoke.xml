@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Mobile Smoke" parallel="false" thread-count="1">
+    <test name="test_01" verbose="1" preserve-order="true">
+        <classes>
+            <class name="com.saucelabs.appium.AndroidTest">
+                <methods>
+                    <include name="test_01" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="test_02" verbose="1" preserve-order="true">
+        <classes>
+            <class name="com.saucelabs.appium.AndroidTest">
+                <methods>
+                    <include name="test_02" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
